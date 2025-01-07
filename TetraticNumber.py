@@ -1,0 +1,13 @@
+list=[1,8,0]
+num=int(input())
+check=0
+while(num>0):
+    rem=num%10
+    if(rem==6):
+        check=check*10+9
+    elif(rem==9):
+        check=check*10+6
+    else:
+        check=check*10+rem
+    num=num//10
+print(check)
